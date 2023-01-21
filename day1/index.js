@@ -12,4 +12,11 @@ console.log(2+2);
 //store data in temporary 
 //store no 3
 num = 3;
+console.log(num);//fetching the value.
+// with this num you can do multiple operation like changing the value 
+
+num=9;
+console.log(num);// once value is replace it is gone
+
+num=num+2;//operation can also be done
 console.log(num);
