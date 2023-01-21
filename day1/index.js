@@ -1,3 +1,7 @@
+/* author : Maithali Gharde
+date 21-01-2023
+*/
+
 //want to print something use console.log
 console.log("HI there i am Maithaly ");
 
@@ -20,3 +24,6 @@ console.log(num);// once value is replace it is gone
 
 num=num+2;//operation can also be done
 console.log(num);
+
+
+//variable will have type 
