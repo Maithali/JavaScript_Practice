@@ -1,50 +1,87 @@
-"use strict"
-let num=7;//number
-//num=seven;//string //error seven is not define
-//whenever  you use string use " " or '' or `
+//functions
+function doSomething(){ //defining
+let name="maithaly";
+console.log(name);
+}
+
+doSomething();//calling a function
 
 
-let numberWhichIWantTOWorkWith=10;
-let numberWhichIWantTOWorkWIth=9;
-console.log(numberWhichIWantTOWorkWith);
-
-let num2 = 2;//let is a way of declaring a variable
-let name1="maithaly";
-console.log(name1);
-
-//statically type language
-//dynamically type language-javascript
-
-//operations 
-let numb1=6;
-let numb2=1;
-console.log(numb1 + numb2);
-console.log(numb1 - numb2);
-console.log(numb1 * numb2);
-console.log(numb1 / numb2);
-console.log(numb1 % numb2);
+//add function
+let num1=0;
+let num2=9;
+let num3=8;
+function add(n1,n2,n3){
+    console.log(n1 + n2 + n3);
+}
+add(num1, num2, num3);
 
 
-//print value and type of
-let x=6;
-console.log(x);
-console.log(typeof x);
+//return
+let v1=9, v2=5;
+function addi(n1,n2){
+    return n1 + n2;
+}
+let addition = addi(v1,v2);
+console.log(addition);
 
 
-let user="maithaly"
-console.log(user, typeof user);
+//objects
+//3 ways of creating objects
+let empty = {};
+console.log(empty);//{}
 
-let value="7879";//string
-console.log(value,typeof value);
+let point = {x:0, y:0};
+let p2 = {x: point.x , y: point.y+1};
+console.log(p2);
 
-let value2 =Number("9643");//converting string  to number tpe
-console.log(typeof value2);
- 
-let value3 = parseInt("987 Maithaly");
-console.log(value3, typeof value3);
+let book = {
+    "title":"js",
+    "author":{
+        "firstname":"maithaly",
+        "lastname":"gharde"
+        
+    },
+    
+    "year":2023,
+    "num_copies":1000
+}
+console.log(book.title);
+console.log(book.year);
+console.log(book.author);
+console.log(book.num_copies);
 
 
+//2nd way object
+let book2 = new Object();
+book2.title = "Harry Potter";
+book2.author = "JK Rowling";
+book2.pages = 400;
+book2.publisher = "Bloomsbury";
+book2.year = 1997;
+console.log(book2);
+console.log(book2.pages);
+//modifying
+book2.pages = 600;
+book2["author"]="maithaly";
+console.log(book2);
 
 
+//3rd way
+let obj1 = Object.create({x:1 , y:2});
+let o2 = obj1.x + obj1.y;
+let o3 = obj1.x * obj1.y;
+console.log(o2);
+console.log(o3);
 
-
+//car example
+const myCar = new Object();
+myCar.company = "RollsRoyces";
+myCar.model = "Rolls-Royce Phantom";
+myCar.engine = "6.7 L V12";
+myCar.seating_capacity = 5;
+myCar.body_style = "Sedan";
+myCar.price = "10.48 Cr.";
+myCar.transmission = "automatic";
+myCar.year = 2023;
+console.log(myCar);

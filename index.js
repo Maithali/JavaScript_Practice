@@ -1,29 +1,75 @@
-/* author : Maithali Gharde
-date 21-01-2023
+//today
+/* 
+loops 
+switch
+functions
+objects
 */
+//while loop
+let y=1;
+while(y <= 5){
+    console.log("maithaly");
+    y++;
+}
 
-//want to print something use console.log
-console.log("HI there i am Maithaly ");
+//do while loop
+let x=1;
+do{
+    console.log("matrix");
+    x++;
+}while(x <= 5)
 
-//want to perform multiplication operation
-console.log(2*2);
+//for loop
+for(let z=1; z<=5; z++){
+    console.log(z);
+}
 
-//want to perform addition
-console.log(2+2);
+//switch statement
 
-//the most important thing for us is data
-//data need to be stored
-//store data in temporary 
-//store no 3
-num = 3;
-console.log(num);//fetching the value.
-// with this num you can do multiple operation like changing the value 
+//sat,sun-6am;
+//mon-fri-8am;
+//wed-7am;
+let day="sun";
+switch(day){
+    case "sat":
+    case "sun":
+        console.log("6am");
+        break;
+    case "mon":
+    case "tue":
+    case "thur":
+    case "fri":
+        console.log("8am");
+        break;
+    case "wed":
+        console.log("7am");
+        break;
+    default:
+        console.log("keep Dreaming");
+    
+        }
 
-num=9;
-console.log(num);// once value is replace it is gone
 
-num=num+2;//operation can also be done
-console.log(num);
+//countinue
+for(let i=1; i<=5;i++){
+    if(i===2)
+    continue;
+    console.log("hello " + i);
+}
 
+//break
+for(let i=1; i<=5;i++){
+    if(i===2)
+    break;
+    console.log("bye " + i);
+}
 
-//variable will have type 
+//nested loops
+for(let i=1;i<=3;i++)
+{
+    for(let j=1; j<=5;j++)
+    {
+        console.log("j "+j);
+    }
+    console.log("end "+ i);
+}
