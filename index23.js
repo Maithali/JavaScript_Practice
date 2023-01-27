@@ -25,3 +25,10 @@ if(regexc.test(c)){
     console.log("false");
 }
 
+let d="9854324873";
+let regd=/^[6-9]\d{9}/;
+if(regd.test(d)){
+    console.log("valid");
+}else{
+    console.log("invalid");
+}
