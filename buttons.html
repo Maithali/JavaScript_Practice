@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+  </head>
+  <body>
+    <script>
+      function buttonOnClick() {
+        var str = (document.getElementById("heading").innerHTML =
+          "hi i am Maithaly");
+        alert(str);
+      }
+
+      function buttonOnClickPara() {
+        var str = (document.getElementById("para").innerHTML =
+          "Welcome to full Stack Blockchain, you will learn javascript,Node js,React,Blockchain,Solidity,ERC tokens,");
+        alert(str);
+      }
+    </script>
+    <button onclick="buttonOnClick()">Click Here</button>
+    <h2 id="heading">Display text</h2>
+
+    <button onclick="buttonOnClickPara()">Click Here for Para</button>
+    <h2 id="para">Initial text</h2>
+  </body>
+</html>
