@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Experessions</title>
+  </head>
+  <body>
+    <h2>RegularExpressions in DOM</h2>
+
+    <p id="regex">
+      welcome to Ineuron, this is full stack blockchain development
+    </p>
+    <script>
+      let text =
+        "welcome to Ineuron, this is full stack blockchain development";
+      let index = text.search("blockchain");
+      document.getElementById("regex").innerHTML = index;
+
+      //find and replace
+      let text1 =
+        "welcome to Ineuron, this is full stack blockchain development";
+
+      function replaceText() {
+        let text1 = document.getElementById("regex").innerHTML;
+        document.getElementById("regex").innerHTML = text1.replace(
+          "blockchain",
+          "BLOCKCHAIN"
+        );
+      }
+    </script>
+    <button onclick="replaceText()">Test the Button</button>
+  </body>
+</html>
