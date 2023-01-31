@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+    <h2>Take input from user in Html forms</h2>
+  </head>
+  <body>
+    <input placeholder="enter anything" id="text1" />
+    <input type="password" id="password" placeholder="enter password" />
+    <button onclick="func1()" id="btn1">Submit</button>
+    <script>
+      function func1() {
+        let str = document.getElementById("text1").value;
+        window.alert("the username is " + str);
+      }
+    </script>
+  </body>
+</html>
