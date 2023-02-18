@@ -1,6 +1,6 @@
 // CelsiusToFahrenheit
 
-const celsius = 100;
+const celsius = 60;
 
 //calcualte fahrenheit
 const fahrenheit = (celsius * 1.8)+32;
